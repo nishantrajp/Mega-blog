@@ -125,7 +125,7 @@ export default function Post() {
                     )}
 
                     {comments.map(comment => (
-                        <div key={comment.$id} className="mb-3 p-2 border rounded">
+                        <div key={comment.$id} className="mb-3 p-3 border rounded">
                             <p className="text-sm text-gray-600">User : {comment.name}</p>
                             <p>{comment.content}</p>
                         </div>
