@@ -7,6 +7,6 @@ const conf = {
     appwriteLikesCollectionId: String(import.meta.env.VITE_APPWRITE_LIKES_COLLECTION_ID),      // <--- Notice String()
     appwriteCommentsCollectionId: String(import.meta.env.VITE_APPWRITE_COMMENTS_COLLECTION_ID),
 };
-// there was a name issue with the import.meta.env.VITE_APPWRITE_URL, it was later fixed in debugging video
+// there was a name issue with the import.meta.env.VITE_APPWRITE_URL, it was later fixed 
 
 export default conf
