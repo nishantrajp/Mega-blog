@@ -73,7 +73,7 @@ export class AuthService {
             // with appropriate read/write permissions for client-side access.
             return await this.databases.createDocument(
                 conf.appwriteDatabaseId,
-                conf.appwriteProfileCollectionId,
+                conf.appwriteCollectionId,
                 userId, // Use userId as document ID for easy lookup
                 {
                     userId,

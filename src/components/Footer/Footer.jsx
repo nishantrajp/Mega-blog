@@ -1,143 +1,58 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Logo from '../Logo'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Logo from '../Logo';
 
 function Footer() {
   return (
-    <section className="relative overflow-hidden py-10 bg-[#3980d1] border border-t-2 ">
-            <div className="relative z-10 mx-auto max-w-7xl px-4">
-                <div className="-m-6 flex flex-wrap">
-                    <div className="w-full p-6 md:w-1/2 lg:w-5/12">
-                        <div className="flex h-full flex-col justify-between">
-                            <div className="mb-4 inline-flex items-center">
-                                <Logo width="100px" />
-                            </div>
-                            <div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full p-6 md:w-1/2 lg:w-2/12">
-                        <div className="h-full">
-                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-black">
-                                Company
-                            </h3>
-                            <ul>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Features
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Pricing
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Affiliate Program
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Press Kit
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="w-full p-6 md:w-1/2 lg:w-2/12">
-                        <div className="h-full">
-                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercasetext-black">
-                                Support
-                            </h3>
-                            <ul>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Account
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Help
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Contact Us
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Customer Support
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="w-full p-6 md:w-1/2 lg:w-3/12">
-                        <div className="h-full">
-                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase b text-black">
-                                Legals
-                            </h3>
-                            <ul>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Terms &amp; Conditions
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Privacy Policy
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Licensing
-                                    </Link>
-                                </li>
-                            </ul>
-                                <p className="text-sm text-black mt-3">
-                                    &copy; Copyright 2024. All Rights Reserved by Nishant
-                                </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-  )
+    <footer className="bg-[#3980d1] text-white border-t border-blue-200 py-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          {/* Logo & Description */}
+          <div className="flex flex-col space-y-4">
+            <Logo width="120px" />
+            <p className="text-sm text-white/80">
+              Building better digital experiences with powerful tools and beautiful design.
+            </p>
+          </div>
+
+          {/* Company */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase mb-4 text-white tracking-wider">Company</h3>
+            <ul className="space-y-2">
+              <li><Link to="/" className="hover:underline text-white/90">Features</Link></li>
+              <li><Link to="/" className="hover:underline text-white/90">Pricing</Link></li>
+              <li><Link to="/" className="hover:underline text-white/90">Affiliate Program</Link></li>
+              <li><Link to="/" className="hover:underline text-white/90">Press Kit</Link></li>
+            </ul>
+          </div>
+
+          {/* Support */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase mb-4 text-white tracking-wider">Support</h3>
+            <ul className="space-y-2">
+              <li><Link to="/" className="hover:underline text-white/90">Account</Link></li>
+              <li><Link to="/" className="hover:underline text-white/90">Help</Link></li>
+              <li><Link to="/" className="hover:underline text-white/90">Contact Us</Link></li>
+              <li><Link to="/" className="hover:underline text-white/90">Customer Support</Link></li>
+            </ul>
+          </div>
+
+          {/* Legals */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase mb-4 text-white tracking-wider">Legal</h3>
+            <ul className="space-y-2">
+              <li><Link to="/" className="hover:underline text-white/90">Terms & Conditions</Link></li>
+              <li><Link to="/" className="hover:underline text-white/90">Privacy Policy</Link></li>
+              <li><Link to="/" className="hover:underline text-white/90">Licensing</Link></li>
+            </ul>
+            <p className="text-xs mt-6 text-white/70">
+              &copy; {new Date().getFullYear()} Nishant. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
